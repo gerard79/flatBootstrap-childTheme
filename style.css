@@ -1,0 +1,293 @@
+/*
+Theme Name: DePaul Library News
+Theme URI: http://xtremelysocial.com/wordpress/flat/
+Description: Flat Bootstrap Child Theme
+Author: Gerard Panganiban
+Author URI: http://news.library.depaul.press/
+Template: flat-bootstrap
+Version: 0.0.5
+Text Domain:  flat-bootstrap-newChild
+*/
+
+@import url('../flat-bootstrap/style.css');
+
+/* =Theme customization starts here
+-------------------------------------------------------- */
+
+/* Global Site Style */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background: #f7f7f7;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: bold;
+    line-height: 1;
+}
+a {color: #2b588b;}
+a:hover {
+   color: #5279a6;
+   text-decoration: underline;
+}
+
+.site-header {
+    background: rgba(41, 65, 92, 1.0);
+    color: #fff;
+    padding: 24px 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.site-header .site-branding .DePaul-logo-link {
+    margin-right: 10px;
+    height: 45px;
+    width: 190px;
+    float: left;
+    border-right: 2px solid #fff;
+}
+.site-header .site-branding-text {
+    font-size: 26px;
+    padding-top: 0;
+    padding-top: .3em;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-left: 22px;
+    margin: 0;
+    float:left; 
+}
+.site-header .site-branding-text .site-title {
+    font-size: 26px;
+    text-transform: none;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.site-header .site-branding-text .site-title a {
+    color: #fff;
+}
+
+#sidebar-home {
+    margin: 35px auto 0;
+    padding: 0 15px;
+}
+#sidebar-home > div {
+   background: #fff; 
+   width: 48%;
+   border-radius: 8px;
+   box-shadow: 0 0 10px #ddd;
+   margin-bottom: 35px;
+}
+#sidebar-home > div:first-child {float:left;}
+#sidebar-home > div:last-child {float:right;}
+#sidebar-home > div > div {
+    width: 100%;
+}
+#sidebar-home h2.widget-title {
+    background-color: #2b5b90;
+    background-image: -moz-linear-gradient(top, #2b5b90, #2b4c72);
+    background-image: -webkit-linear-gradient(top, #2b5b90, #2b4c72);
+    background-image: -o-linear-gradient(top, #2b5b90, #2b4c72);
+    background-image: -ms-linear-gradient(top, #2b5b90, #2b4c72);
+    background-image: linear-gradient(to bottom, #2b5b90, #2b4c72);
+
+    color: #fff;
+    font-size: 26px;
+    padding: 14px 32px;
+    border-radius: 8px 8px 0 0;
+    margin: 0 -15px;
+}
+#sidebar-home h4 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    padding: 0;
+    width: 100%;
+    float: right;
+    font-weight: 800;
+    padding: 8px 0 0 0;
+    line-height: 30px;
+}
+#sidebar-home img {
+    max-width: 90px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+#sidebar-home h4 a:hover {
+    text-decoration: underline;
+}
+#sidebar-home p {
+    margin: 0 0 8px 0 !important;
+    padding: 0 0 26px;
+    font-size: 90%;
+    border-bottom: 1px solid #cccccc;
+    text-align: justify;
+}
+#sidebar-home p:last-child {border:0;}
+#sidebar-home p a.read-more {
+    background: #5279a6;
+    color: #fff;
+    padding: 8px 0;
+    display: block;
+    width: 24%;
+    margin: 14px 0 0 0;
+    text-align: center;
+}
+#sidebar-home p a.read-more:hover {
+    background: #2b588b;
+    text-decoration: none;
+}
+#sidebar-home > div > div > div {
+    padding: 0 18px;
+}
+
+/* Footer Styles */
+.site-footer {
+    color: #565656;
+    background-color: #f0f1f3;
+    border-top: 1px solid #c7cdcd;
+    font-size: 16px;
+    line-height: 26px;
+}
+.site-footer a:hover {
+    text-decoration: underline !important;
+}
+.site-footer .site-info {
+    padding: 25px 0 0;
+}
+
+
+.site-footer .university-address {
+    padding-right: 3%;
+    width: 20%;
+    float: left;
+}
+.site-footer .university-address h5 {
+    font-size: 19px;
+    margin: 0 0 1.67em;
+}
+.site-footer .copyright, .site-footer .by {
+    display: none;
+}
+.site-footer ul.no-bullets {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 0 1.5em;
+}
+.site-footer ul li {
+    margin-top: 0 !important;
+}
+.site-footer ul li a {
+    color: #565656 !important;
+    cursor: text;
+    padding-right: 16px;
+    background-image: url("images/icon-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.footer-external-links {
+    width: 70%;
+    float: right;
+    padding: 12px 0;
+}
+.footer-external-links img {
+    display: block;
+    margin-right: .5em;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+.footer-external-links ul, .footer-external-links ul li {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-external-links ul li {
+    width: 33.33333%;
+    float: left;
+    padding: 0 3%;
+}
+.footer-links {
+    background-color: #fff;
+    line-height: 1.618 !important;
+    clear: both;
+    border-top: 1px solid #ddd;
+    padding: 24px 0;
+}
+.footer-links p {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.footer-links a {
+    color: #434a51 !important;
+}
+
+
+
+
+.site-footer a.social-blue {
+    background-color: #7197c2 !important;
+}
+.site-footer a:hover.social-blue {
+    background-color: #052c41 !important;
+}
+.site-footer .social-media-icons {
+    margin-top: -25px;
+    float: right;
+    padding: 0 3%;
+}
+.site-footer .social-media-icons a {
+    display: inline-block;
+    margin-right: 8px;
+    height: 44px;
+    cursor: pointer;
+    width: 44px;
+    background-size: 176px 44px !important;
+    text-indent: -99999px;
+}
+.site-footer .social-media-icons .fb {
+    background-image: url("images/icons-social-media-sprites.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+.site-footer .social-media-icons .twitter {
+    background-image: url("images/icons-social-media-sprites.png");
+    background-repeat: no-repeat;
+    background-position: -44px;
+}
+.site-footer .social-media-icons .youtube {
+    background-image: url("images/icons-social-media-sprites.png");
+    background-repeat: no-repeat;
+    background-position: -88px;
+}
+.site-footer .social-media-icons .pinterest {
+    background-image: url("images/icons-social-media-sprites.png");
+    background-repeat: no-repeat;
+    background-position: -133px;
+}
+
+#main-grid {display:none;}
+
+@media (max-width: 992px) {
+#sidebar-home > div {
+    width: 100%;
+}
+.site-footer .university-address {
+    width: 100%;
+}
+}
+@media (min-width: 768px) {
+.sidebar-home {
+    width: 750px;
+}
+}
+@media (min-width: 992px) {
+.sidebar-home {
+    width: 970px;
+}
+}
+@media (min-width: 1200px) {
+.sidebar-home {
+    width: 1170px;
+}
+}
+
